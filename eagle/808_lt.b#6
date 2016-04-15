@@ -851,13 +851,13 @@ design rules under a new name.</description>
 <element name="R3" library="pot" package="3RP/1610N" value="100k" x="67.31" y="3.81"/>
 <element name="R4" library="pot" package="3RP/1610N" value="500R" x="31.75" y="3.81"/>
 <element name="SW8" library="808_lt" package="MSS42_SW_SLIDE" value="MSS42_SW_4PDT" x="49.53" y="0"/>
-<element name="X1" library="con-molex" package="22-23-2021" value="22-23-2021" x="-3.81" y="-7.62">
+<element name="PINK_NORM" library="con-molex" package="22-23-2021" value="22-23-2021" x="-3.81" y="-7.62">
 <attribute name="OC_NEWARK" value="25C3832" x="-3.81" y="-7.62" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="22-23-2021" x="-3.81" y="-7.62" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="MOLEX" x="-3.81" y="-7.62" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1462926" x="-3.81" y="-7.62" size="1.778" layer="27" display="off"/>
 </element>
-<element name="X2" library="con-molex" package="22-23-2021" value="22-23-2021" x="-11.43" y="-7.62">
+<element name="OUT_NORM" library="con-molex" package="22-23-2021" value="22-23-2021" x="-11.43" y="-7.62">
 <attribute name="OC_NEWARK" value="25C3832" x="-11.43" y="-7.62" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="22-23-2021" x="-11.43" y="-7.62" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="MOLEX" x="-11.43" y="-7.62" size="1.778" layer="27" display="off"/>
@@ -1102,8 +1102,8 @@ design rules under a new name.</description>
 <contactref element="OUTPUT" pad="P$1"/>
 <contactref element="PINK_NOISE" pad="P$1"/>
 <contactref element="SW8" pad="P$12"/>
-<contactref element="X2" pad="2"/>
-<contactref element="X1" pad="2"/>
+<contactref element="OUT_NORM" pad="2"/>
+<contactref element="PINK_NORM" pad="2"/>
 <wire x1="64.77" y1="41.91" x2="62.23" y2="45.72" width="0" layer="19" extent="1-1"/>
 <wire x1="59.69" y1="30.48" x2="64.77" y2="41.91" width="0" layer="19" extent="1-1"/>
 <wire x1="56.769" y1="21.951" x2="59.69" y2="30.48" width="0" layer="19" extent="1-1"/>
@@ -1174,13 +1174,13 @@ design rules under a new name.</description>
 <wire x1="33.02" y1="58.42" x2="33.02" y2="55.88" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
-<contactref element="X2" pad="1"/>
+<contactref element="OUT_NORM" pad="1"/>
 <contactref element="OUTPUT" pad="P$2"/>
 <wire x1="-12.7" y1="-7.62" x2="89.1" y2="13.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="PINK_NOISE" pad="P$2"/>
-<contactref element="X1" pad="1"/>
+<contactref element="PINK_NORM" pad="1"/>
 <wire x1="-5.08" y1="-7.62" x2="20.52" y2="13.5" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
