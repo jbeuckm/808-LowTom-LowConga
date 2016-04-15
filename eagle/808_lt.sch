@@ -11227,8 +11227,8 @@ by exp-lbrs.ulp</description>
 <part name="P-3" library="supply1" deviceset="-15V" device=""/>
 <part name="PINK_NOISE" library="erthenvar" deviceset="AUDIO-JACK" device=""/>
 <part name="V3" library="supply1" deviceset="GND" device=""/>
-<part name="R3" library="pot" deviceset="3RP/1610N" device="" value="100k"/>
-<part name="R4" library="pot" deviceset="3RP/1610N" device="" value="500R"/>
+<part name="LEVEL" library="pot" deviceset="3RP/1610N" device="" value="100k"/>
+<part name="TUNE" library="pot" deviceset="3RP/1610N" device="" value="500R"/>
 <part name="PINK_NORM" library="con-molex" deviceset="22-23-2021" device=""/>
 <part name="OUT_NORM" library="con-molex" deviceset="22-23-2021" device=""/>
 <part name="V4" library="supply1" deviceset="GND" device=""/>
@@ -11340,8 +11340,8 @@ by exp-lbrs.ulp</description>
 <instance part="P-3" gate="1" x="139.7" y="10.16"/>
 <instance part="PINK_NOISE" gate="G$1" x="-17.78" y="-2.54" rot="MR180"/>
 <instance part="V3" gate="1" x="-10.16" y="-7.62"/>
-<instance part="R3" gate="G$1" x="119.38" y="86.36" rot="R270"/>
-<instance part="R4" gate="G$1" x="38.1" y="71.12" rot="R90"/>
+<instance part="LEVEL" gate="G$1" x="119.38" y="86.36" rot="R270"/>
+<instance part="TUNE" gate="G$1" x="38.1" y="71.12" rot="R90"/>
 <instance part="SW8" gate="G$4" x="35.56" y="30.48" rot="MR270"/>
 <instance part="PINK_NORM" gate="-1" x="-12.7" y="10.16" rot="R180"/>
 <instance part="PINK_NORM" gate="-2" x="-12.7" y="12.7" rot="R180"/>
@@ -11461,7 +11461,7 @@ by exp-lbrs.ulp</description>
 <junction x="48.26" y="71.12"/>
 <pinref part="D81" gate="G$1" pin="A"/>
 <pinref part="D80" gate="G$1" pin="C"/>
-<pinref part="R4" gate="G$1" pin="A"/>
+<pinref part="TUNE" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$255" class="0">
@@ -11469,7 +11469,7 @@ by exp-lbrs.ulp</description>
 <wire x1="43.18" y1="78.74" x2="38.1" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="78.74" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R231" gate="G$1" pin="1"/>
-<pinref part="R4" gate="G$1" pin="S"/>
+<pinref part="TUNE" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="N$256" class="0">
@@ -11520,14 +11520,14 @@ by exp-lbrs.ulp</description>
 <junction x="114.3" y="76.2"/>
 <pinref part="IC1" gate="A" pin="-IN"/>
 <junction x="114.3" y="50.8"/>
-<pinref part="R3" gate="G$1" pin="A"/>
+<pinref part="LEVEL" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$261" class="0">
 <segment>
 <wire x1="119.38" y1="81.28" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="C82" gate="G$1" pin="-"/>
-<pinref part="R3" gate="G$1" pin="S"/>
+<pinref part="LEVEL" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="N$262" class="0">
@@ -11713,7 +11713,7 @@ by exp-lbrs.ulp</description>
 <segment>
 <wire x1="33.02" y1="71.12" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="V148" gate="1" pin="GND"/>
-<pinref part="R4" gate="G$1" pin="E"/>
+<pinref part="TUNE" gate="G$1" pin="E"/>
 </segment>
 <segment>
 <pinref part="R215" gate="G$1" pin="1"/>
